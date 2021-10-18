@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hunter Assessment</title>
+</head>
+<body>
+    <h1> Real Talk </h1>
+    <audio src="https://static.bandlab.com/soundbanks/previews/new-wave-kit.ogg"></audio>
+    <p>Click to play audio</p>
+    <input type="range" id="volume" min="0" max="2" value="1" step="0.01" data-action = "volume">
+    <button data-playing="false" class="tape-controls-play audio-button" role="switch" aria-checked="false">
+        <span>Play/Pause</span>
+    </button>
+
+    <div class="topics">
+    <div>
+        <p>Select all posts</p>
+        <button id="posts"> Posts</button></div>
+    <div><p>Select by title </p>
+        <select id="sort-post-title"></select>
+    </div>
+    <div>
+        <p>Select Post by userID</p>
+        <input id="post-id" placeholder="userId"> </input>
+        <button id="posts-by-id">Search</button>
+    </div>   
+   </div>
+   <ul id="all-posts"></ul>
+   <div id="post"></div>
+   <ul id="posts-id"></ul>
+
+    
+</body>
+<script src="index.js"></script>
+</html>
