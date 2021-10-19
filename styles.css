@@ -23,13 +23,7 @@ button{
     border-radius: 3px;
 }
 
-.audio-button{
-    background-color: rgb(16, 172, 16);
-    grid-area: auto;
-}
-#volume{
-    color: rgb(235, 130, 130);
-}
+
 .topics{
     display: flex;
     justify-content: space-evenly;
